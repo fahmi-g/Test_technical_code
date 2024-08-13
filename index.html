@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="localhost:5000/" method="GET" onSubmit="segitiga()">
+
+            <input type="text" name="angka" id="agka" placeholder="Input Angka">
+            <input type="submit" class="segitiga" value="Generate Segitiga">
+            <input type="submit" class="ganjil" value="Generate Bilangan Ganjil">
+            <input type="submit" class="prima" value="Generate Bilangan Prima">
+
+        </form>
+
+        <script>
+            function segitiga()
+            {
+                location.href = "localhost:5000/generateSegitiga/"+document.getElementById("angka").value;
+                return false;
+            }
+        </script>
+    </body>
+</html>
